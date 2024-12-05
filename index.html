@@ -17,6 +17,7 @@
     </script>
     <!-- End Google Tag Manager-->
     <meta charset="utf-8">
+    <meta name="language" content="Ukrainian">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Yednai – платформа взаємопопомоги під час війни">
@@ -40,6 +41,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="mask-icon" href="fonts/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="preload" href="img/svg/psycho_help.svg" as="image" type="image/svg+xml">
+    <link rel="preload" href="img/svg/banner/stars.svg" as="image" type="image/svg+xml">
     <link rel="manifest" href="site.webmanifest">
     <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -69,12 +72,13 @@
         <header class="header">
           <div class="content-width">
             <div class="header-inner">
-              <button class="logo" type="button"></button>
+              <button class="logo" type="button" aria-label="Go to homepage"></button>
               <nav class="main-menu"></nav>
               <div class="row-sta-cen">
                 <div class="language">
-                  <div class="language-current"><img src="fonts/bell.svg" alt="Дзвінок"></div>
-                </div><a class="start-button" id="register-header" href="https://app.yednai.com/"><span>Зареєструватись</span></a>
+                  <div class="language-current"><img src="img/svg/bell.svg" alt="Дзвінок"></div>
+                </div>
+                <a class="start-button" id="register-header" href="https://app.yednai.com/" aria-label="Go to register"><span>Зареєструватись</span></a>
                 <div class="burger">
                   <div class="burger-item"></div>
                   <div class="burger-item"></div>
@@ -86,49 +90,51 @@
           <hr class="hr-h fg-white">
         </header>
         <main class="content">
-          <div class="banner">
+          <section class="banner">
             <div class="content-width">
               <div class="fg-white maw-col-5 miw-col-5 gap-v-sub-std t-860-miw-col-2">
                 <div class="w-100p gap-v-1 t-860-text-center">
                   <h1 class="font-h1 line-h-1x5"><span class="brand-span">Психологічна </span><br>допомога Yednai</h1>
-                  <p>
-                     Із поверненням додому з фронту, повітряними тривогами, обстрілами і переїздами, психологічна 
-                    допомога сьогодні необхідна багатьом.
-                  </p>
+                  <p>Із поверненням додому з фронту, повітряними тривогами, обстрілами і переїздами, психологічна допомога сьогодні необхідна багатьом.</p>
                 </div>
-                <div class="banner-buttons"><a class="btn-accent miw-col-2 --big" id="looking-for-help" href="https://app.yednai.com/"><span>Отримати допомогу</span></a><a class="btn-white miw-col-2 --big" id="offer-help" href="https://docs.google.com/forms/d/e/1FAIpQLScRhbMfJ6Tp4sv7-D5xDLXFGSnuJa01vmYGWnghGENmbVaYrA/viewform?usp=sf_link"><span> Я психолог – хочу допомогти</span></a></div>
-              </div><img class="maw-col-5 t-860-maw-col-3" src="fonts/psycho_help.svg" alt="banner image">
+                <div class="banner-buttons">
+                  <a class="btn-accent miw-col-2 --big" id="looking-for-help" href="https://app.yednai.com/"><span>Отримати допомогу</span></a>
+                  <a class="btn-white miw-col-2 --big" id="offer-help" href="https://docs.google.com/forms/d/e/1FAIpQLScRhbMfJ6Tp4sv7-D5xDLXFGSnuJa01vmYGWnghGENmbVaYrA/viewform?usp=sf_link"><span> Я психолог – хочу допомогти</span></a>
+                </div>
+              </div>
+              <img class="maw-col-5 t-860-maw-col-3" src="img/svg/psycho_help.svg" alt="banner image">              
             </div>
-          </div>
+          </section>
           <div class="content-item">
             <div class="col-sta-cen w-100p gap-v-std">
-              <div class="col-sta-cen w-100p gap-v-sub-std" id="find-out-what-to-do">
+              <section class="col-sta-cen w-100p gap-v-sub-std" id="find-out-what-to-do">
                 <h2 class="brand-h2 text-center">Як зрозуміти свій стан чи стан близької людини?</h2>
-                <div class="brand-sub-title">Ми створили персональне тестування, яке:</div>
-                <div class="caro --3">
-                  <div class="caro-item">
-                    <div class="caro-inner">
-                      <div class="caro-icon-box bg-gradient-2nd shad-secondary"><img class="caro-icon" src="fonts/prepared_psychology.svg" alt="ПІДГОТОВЛЕНЕ ПСИХОЛОГАМИ icon"></div>
-                      <div class="caro-text fg-primary">Підготовлене професійними психологами</div>
-                    </div>
-                  </div>
-                  <div class="caro-item">
-                    <div class="caro-inner">
-                      <div class="caro-icon-box bg-gradient-2nd shad-secondary"><img class="caro-icon" src="fonts/live_psychology.svg" alt="ПРОЖИТИ РАЗОМ icon"></div>
-                      <div class="caro-text fg-primary">Дає можливість виділити точки болю та “прожити” їх разом зі спеціалістом</div>
-                    </div>
-                  </div>
-                  <div class="caro-item">
-                    <div class="caro-inner">
-                      <div class="caro-icon-box bg-gradient-2nd shad-secondary"><img class="caro-icon" src="fonts/manage_yourself.svg" alt="ВПОРАТИСЬ САМОТУЖКИ icon"></div>
-                      <div class="caro-text fg-primary">Дає зрозуміти, в яких випадках ви здатні впоратись самотужки</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="brand-sub-title helps-with-wrapper"> <span>Допомагає діагностувати: </span><span class="brand-sub-span trans-upper">депресію </span><span class="brand-sub-span trans-upper">тривожність </span><span class="brand-sub-span trans-upper">посттравматичний стресовий розлад</span></div>
-              </div>
-              <div id="about-us">
-                <div class="about-us-img"><img src="fonts/deep_psycho_knowledge.svg" alt="deep knowledge image"></div>
+                <p class="brand-sub-title">Ми створили персональне тестування, яке:</p>
+                <ul class="caro --3">
+                  <li class="caro-item">
+                    <article class="caro-inner">
+                      <div class="caro-icon-box bg-gradient-2nd shad-secondary">
+                        <img class="caro-icon" src="fonts/prepared_psychology.svg" alt="ПІДГОТОВЛЕНЕ ПСИХОЛОГАМИ icon" loading="lazy"></div>
+                      <p class="caro-text fg-primary">Підготовлене професійними психологами</p>
+                    </article>
+                  </li>
+                  <li class="caro-item">
+                    <article class="caro-inner">
+                      <div class="caro-icon-box bg-gradient-2nd shad-secondary"><img class="caro-icon" src="img/svg/live_psychology.svg" alt="ПРОЖИТИ РАЗОМ icon" loading="lazy"></div>
+                      <p class="caro-text fg-primary">Дає можливість виділити точки болю та “прожити” їх разом зі спеціалістом</p>
+                    </article>
+                  </li>
+                  <li class="caro-item">
+                    <article class="caro-inner">
+                      <div class="caro-icon-box bg-gradient-2nd shad-secondary"><img class="caro-icon" src="img/svg/manage_yourself.svg" alt="ВПОРАТИСЬ САМОТУЖКИ icon" loading="lazy"></div>
+                      <p class="caro-text fg-primary">Дає зрозуміти, в яких випадках ви здатні впоратись самотужки</p>
+                    </article>
+                  </li>
+                </ul>
+                <p class="brand-sub-title helps-with-wrapper"> <span>Допомагає діагностувати: </span><span class="brand-sub-span trans-upper">депресію </span><span class="brand-sub-span trans-upper">тривожність </span><span class="brand-sub-span trans-upper">посттравматичний стресовий розлад</span></p>
+              </section>
+              <section id="about-us">
+                <div class="about-us-img"><img src="img/svg/deep_psycho_knowledge.svg" alt="deep knowledge image" loading="lazy"></div>
                 <div class="about-us-text fg-primary">
                   <div class="responsive-typography">
                     <p>
@@ -136,17 +142,18 @@
                       посттравматичних реакцій та Госпітальну шкалу тривоги і депресії, а також в результаті на дані шкали депресії 
                       Бека та шкали тривоги Спілберга.
                     </p>
-                  </div><a class="btn-gradient miw-col-2 --big" id="start-about-us" href="https://app.yednai.com/"><span>Дізнатися про свій стан</span></a>
+                  </div>
+                  <a class="btn-gradient miw-col-2 --big" id="start-about-us" href="https://app.yednai.com/"><span>Дізнатися про свій стан</span></a>
                   <p>
                     Якщо ж ви хочете оформити запит від імені людини, яка не здатна звернутись самостійно – опишіть її стан 
                     та основні тригерні точки <a class="dec-under-hover-dec-none" href="https://t.me/yednai_bot" target="_blank">
                     у спеціальній формі</a>
                   </p>
                 </div>
-              </div>
+              </section>
             </div>
           </div>
-          <div class="bg-faded" id="how-it-works">
+          <section class="bg-faded" id="how-it-works">
             <div class="content-item">
               <div class="col-sta-cen w-100p gap-v-2">
                 <div class="w-100p">
@@ -167,22 +174,25 @@
                             вихід.
                           </p>
                         </div>
-                        <div class="crimes-buttons"><a class="btn-gradient --big" id="report-crimes" href="https://app.yednai.com/"><span>Отримати допомогу психолога</span></a></div>
+                        <p class="crimes-buttons"><a class="btn-gradient --big" id="report-crimes" href="https://app.yednai.com/"><span>Отримати допомогу психолога</span></a></p>
                       </div>
                     </div>
-                    <div class="how-it-works-item"><img class="crimes-img" src="fonts/consultant.svg" alt="Консультант"></div>
+                    <div class="how-it-works-item"><img class="crimes-img" src="img/svg/consultant.svg" alt="Консультант" loading="lazy">
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div id="what-can-we-do">
+          </section>
+          <section id="what-can-we-do">
             <div class="content-item">
               <h2 class="brand-h2 text-center">Чи можу я собі допомогти?</h2>
               <div class="col-sta-cen w-100p gap-v-2">
                 <div class="w-100p">
                   <div class="how-it-works-grid">
-                    <div class="how-it-works-item"><img class="crimes-img" src="fonts/help_yourself.svg" alt="Консультант"></div>
+                    <div class="how-it-works-item">
+                      <img class="crimes-img" src="img/svg/help_yourself.svg" alt="Консультант" loading="lazy">
+                    </div>
                     <div class="how-it-works-item">
                       <div class="crimes-text fg-primary">
                         <div class="responsive-typography">
@@ -197,29 +207,46 @@
                             щоб подолати паніку, стрес та апатію.
                           </p>
                         </div>
-                        <div class="crimes-buttons"><a class="btn-gradient --big" id="report-crimes" href="https://app.yednai.com/"><span>Отримати низку порад</span></a></div>
+                        <p class="crimes-buttons"><a class="btn-gradient --big" id="report-crimes" href="https://app.yednai.com/"><span>Отримати низку порад</span></a></p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </main>
         <footer class="footer">
           <div class="content-width">
             <div class="footer-banner">
-              <div class="footer-banner-text">Україна понад усе!</div><img class="footer-banner-img --girl" src="fonts/girl-with-map.svg" alt="footer banner img">
+              <div class="footer-banner-text">Україна понад усе!</div>
+              <img class="footer-banner-img --girl" src="img/svg/girl-with-map.svg" alt="footer banner img" loading="lazy">
             </div>
             <div class="footer-top">
-              <button class="logo" type="button"></button>
+              <button class="logo" type="button" aria-label="Go to homepage"></button>
               <div class="footer-box"><a class="fg-white decorate-link text-center" href="https://app.yednai.com/donate" target="_blank"><span>Підтримати проект</span></a>
-                <div class="socials"><a class="social --facebook" id="facebook-footer" title="Facebook" target="_blank" href="https://www.facebook.com/Yednai-109819238451516"></a><a class="social --instagram" id="instagram-footer" title="Instagram" target="_blank" href="https://www.instagram.com/yednai_com"></a><a class="social --linked-in" id="linked-in-footer" title="Linked In" target="_blank" href="https://www.linkedin.com/in/yednai-com-514177244/"></a><a class="social --twitter" id="twitter-footer" title="Twitter" target="_blank" href="https://twitter.com/yednai_com"></a><a class="social --telegram" id="telegram-footer" title="Twitter" target="_blank" href="https://t.me/yednai_bot"></a></div><a class="start-button" id="footer-register" href="https://app.yednai.com/"><span>Зареєструватися</span></a>
-              </div>
+                <ul class="socials">
+                  <li>
+                    <a class="social --facebook" id="facebook-footer" title="Facebook" target="_blank" href="https://www.facebook.com/Yednai-109819238451516"></a>
+                  </li>
+                  <li>
+                    <a class="social --instagram" id="instagram-footer" title="Instagram" target="_blank" href="https://www.instagram.com/yednai_com"></a>
+                  </li>
+                  <li>
+                    <a class="social --linked-in" id="linked-in-footer" title="Linked In" target="_blank" href="https://www.linkedin.com/in/yednai-com-514177244/"></a>
+                  </li>
+                  <li>
+                    <a class="social --twitter" id="twitter-footer" title="Twitter" target="_blank" href="https://twitter.com/yednai_com"></a>
+                  </li>
+                  <li>
+                    <a class="social --telegram" id="telegram-footer" title="Twitter" target="_blank" href="https://t.me/yednai_bot"></a></div>
+                  </li>
+                </ul>
+                    <a class="start-button" id="footer-register" href="https://app.yednai.com/"><span>Зареєструватися</span></a>
             </div>
             <hr class="hr-h fg-white">
             <div class="footer-bottom">
-              <div class="text-center w-100p pad-h-1x5">Copyright © 2022 Всі права захищені!</div>
+              <p class="text-center w-100p pad-h-1x5">Copyright © 2022 Всі права захищені!</p>
             </div>
           </div>
         </footer>
@@ -228,11 +255,11 @@
       <div class="header --fixed">
         <div class="content-width">
           <div class="header-inner">
-            <button class="logo" type="button"></button>
+            <button class="logo" type="button" aria-label="Go to homepage"></button>
             <nav class="main-menu"></nav>
             <div class="row-sta-cen">
               <div class="language">
-                <div class="language-current"><img src="fonts/bell.svg" alt="Дзвінок"></div>
+                <div class="language-current"><img src="img/svg/bell.svg" alt="Дзвінок"></div>
               </div><a class="start-button" id="register-header" href="https://app.yednai.com/"><span>Зареєструватись</span></a>
               <div class="burger">
                 <div class="burger-item"></div>
@@ -249,11 +276,11 @@
         <div class="mobile-menu-container">
           <div class="mobile-menu-box">
             <div class="mobile-menu-body">
-              <button class="mobile-menu-close --close-btn" type="button"></button>
+              <button class="mobile-menu-close --close-btn" type="button" aria-label="Close menu"></button>
               <div class="mobile-menu-inner">
-                <button class="logo" type="button"></button>
+                <button class="logo" type="button" aria-label="Go to homepage"></button>
                 <div class="language">
-                  <div class="language-current"><img src="fonts/bell.svg" alt="Дзвінок"></div>
+                  <div class="language-current"><img src="img/svg/bell.svg" alt="Дзвінок"></div>
                 </div>
                 <div class="socials"><a class="social --facebook" id="facebook-footer" title="Facebook" target="_blank" href="https://www.facebook.com/Yednai-109819238451516"></a><a class="social --instagram" id="instagram-footer" title="Instagram" target="_blank" href="https://www.instagram.com/yednai_com"></a><a class="social --linked-in" id="linked-in-footer" title="Linked In" target="_blank" href="https://www.linkedin.com/in/yednai-com-514177244/"></a><a class="social --twitter" id="twitter-footer" title="Twitter" target="_blank" href="https://twitter.com/yednai_com"></a><a class="social --telegram" id="telegram-footer" title="Twitter" target="_blank" href="https://t.me/yednai_bot"></a></div>
                 <div class="w-100p gap-v-1">
@@ -267,9 +294,9 @@
         </div>
       </div>
     </div>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery-validate-1.19.3.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script async src="js/jquery-3.6.0.min.js"></script>
+    <script async src="js/jquery-validate-1.19.3.min.js"></script>
+    <script async src="js/slick.min.js"></script>
+    <script async src="js/main.min.js"></script>
   
 </body></html>
