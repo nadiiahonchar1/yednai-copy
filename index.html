@@ -124,7 +124,7 @@
               <a class="logo" href="/" aria-label="Перейти на головну"></a>
               <nav class="main-menu" aria-label="Головне меню"></nav>
               <div class="row-sta-cen">
-                <div class="language" aria-label="Вибір мови">
+                <div class="language">
                   <button class="language-current" aria-label="Змінити мову">
                     <img src="img/svg/bell.svg" alt="Дзвінок" />
                   </button>
@@ -137,11 +137,11 @@
                 >
                   <span>Зареєструватись</span>
                 </a>
-                <button class="burger" aria-label="Відкрити меню">
+                <div class="burger">
                   <div class="burger-item"></div>
                   <div class="burger-item"></div>
                   <div class="burger-item"></div>
-                </button>
+                </div>
               </div>
             </div>
           </div>
@@ -199,7 +199,7 @@
                   Як зрозуміти свій стан чи стан близької людини?
                 </h2>
                 <p class="brand-sub-title">Ми створили персональне тестування, яке:</p>
-                <ul class="caro --3" role="list">
+                <ul class="caro --3">
                   <li class="caro-item">
                     <article class="caro-inner">
                       <div class="caro-icon-box bg-gradient-2nd shad-secondary">
@@ -251,7 +251,7 @@
                   ><span class="brand-sub-span trans-upper">посттравматичний стресовий розлад</span>
                 </p>
               </section>
-              <section id="about-us" aria-labelledby="about-us-title">
+              <section id="about-us">
                 <h2>Про нас</h2>
                 <div class="about-us-img">
                   <img
@@ -486,15 +486,24 @@
       <div class="header --fixed">
         <div class="content-width">
           <div class="header-inner">
-            <button class="logo" type="button" aria-label="Go to homepage"></button>
-            <nav class="main-menu"></nav>
+            <button class="logo" type="button" aria-label="Перейти на головну сторінку"></button>
+
+            <nav class="main-menu" aria-label="Головне меню"></nav>
             <div class="row-sta-cen">
               <div class="language">
-                <div class="language-current"><img src="img/svg/bell.svg" alt="Дзвінок" /></div>
+                <div class="language-current">
+                  <img src="img/svg/bell.svg" alt="Дзвінок" />
+                </div>
               </div>
-              <a class="start-button" id="register-header" href="https://app.yednai.com/"
-                ><span>Зареєструватись</span></a
+              <a
+                class="start-button"
+                id="register-header"
+                href="https://app.yednai.com/"
+                aria-label="Зареєструватись"
               >
+                <span>Зареєструватись</span>
+              </a>
+
               <div class="burger">
                 <div class="burger-item"></div>
                 <div class="burger-item"></div>
@@ -505,87 +514,92 @@
         </div>
         <hr class="hr-h fg-white" />
       </div>
-      <div id="mobile-menu" class="mobile-menu" hidden>
-  <div class="mobile-menu-background"></div>
-  <div class="mobile-menu-container">
-    <div class="mobile-menu-box">
-      <div class="mobile-menu-body">
-        <button
-          class="mobile-menu-close --close-btn"
-          type="button"
-          aria-label="Закрити меню"
-          aria-expanded="true"
-        ></button>
+      <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-background"></div>
+        <div class="mobile-menu-container">
+          <div class="mobile-menu-box">
+            <div class="mobile-menu-body">
+              <button
+                class="mobile-menu-close --close-btn"
+                type="button"
+                aria-label="Закрити меню"
+                aria-expanded="true"
+              ></button>
 
-        <div class="mobile-menu-inner">
-          <button class="logo" type="button" aria-label="Перейти на головну сторінку"></button>
-          <div class="language">
-            <div class="language-current">
-              <img src="img/svg/bell.svg" alt="Дзвінок" />
+              <div class="mobile-menu-inner">
+                <button
+                  class="logo"
+                  type="button"
+                  aria-label="Перейти на головну сторінку"
+                ></button>
+                <div class="language">
+                  <div class="language-current">
+                    <img src="img/svg/bell.svg" alt="Дзвінок" />
+                  </div>
+                </div>
+                <ul class="socials">
+                  <li>
+                    <a
+                      class="social --facebook"
+                      id="facebook-footer"
+                      title="Facebook"
+                      target="_blank"
+                      href="https://www.facebook.com/Yednai-109819238451516"
+                      aria-label="Facebook Yednai"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="social --instagram"
+                      id="instagram-footer"
+                      title="Instagram"
+                      target="_blank"
+                      href="https://www.instagram.com/yednai_com"
+                      aria-label="Instagram Yednai"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="social --linked-in"
+                      id="linked-in-footer"
+                      title="LinkedIn"
+                      target="_blank"
+                      href="https://www.linkedin.com/in/yednai-com-514177244/"
+                      aria-label="LinkedIn Yednai"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="social --twitter"
+                      id="twitter-footer"
+                      title="Twitter"
+                      target="_blank"
+                      href="https://twitter.com/yednai_com"
+                      aria-label="Twitter Yednai"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="social --telegram"
+                      id="telegram-footer"
+                      title="Telegram"
+                      target="_blank"
+                      href="https://t.me/yednai_bot"
+                      aria-label="Telegram Yednai Bot"
+                    ></a>
+                  </li>
+                </ul>
+                <div class="w-100p gap-v-1">
+                  <hr class="hr-h fg-white" />
+                  <nav class="main-menu" aria-label="Мобільне меню"></nav>
+                  <hr class="hr-h fg-white" />
+                </div>
+              </div>
             </div>
-          </div>
-            <ul class="socials">
-              <li>
-                <a
-                  class="social --facebook"
-                  id="facebook-footer"
-                  title="Facebook"
-                  target="_blank"
-                  href="https://www.facebook.com/Yednai-109819238451516"
-                  aria-label="Facebook Yednai"
-                ></a>
-              </li>
-              <li>
-                <a
-                  class="social --instagram"
-                  id="instagram-footer"
-                  title="Instagram"
-                  target="_blank"
-                  href="https://www.instagram.com/yednai_com"
-                  aria-label="Instagram Yednai"
-                ></a>
-              </li>
-              <li>
-                <a
-                  class="social --linked-in"
-                  id="linked-in-footer"
-                  title="LinkedIn"
-                  target="_blank"
-                  href="https://www.linkedin.com/in/yednai-com-514177244/"
-                  aria-label="LinkedIn Yednai"
-                ></a>
-              </li>
-              <li>
-                <a
-                  class="social --twitter"
-                  id="twitter-footer"
-                  title="Twitter"
-                  target="_blank"
-                  href="https://twitter.com/yednai_com"
-                  aria-label="Twitter Yednai"
-                ></a>
-              </li>
-              <li>
-                <a
-                  class="social --telegram"
-                  id="telegram-footer"
-                  title="Telegram"
-                  target="_blank"
-                  href="https://t.me/yednai_bot"
-                  aria-label="Telegram Yednai Bot"
-                ></a>
-              </li>
-            </ul>
-          <div class="w-100p gap-v-1">
-            <hr class="hr-h fg-white" />
-            <nav class="main-menu" aria-label="Мобільне меню"></nav>
-            <hr class="hr-h fg-white" />
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
     <script async src="js/jquery-3.6.0.min.js"></script>
     <script async src="js/jquery-validate-1.19.3.min.js"></script>
     <script async src="js/slick.min.js"></script>
